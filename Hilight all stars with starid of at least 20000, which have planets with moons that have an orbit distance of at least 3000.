@@ -1,0 +1,4 @@
+
+
+insert into hilight 
+	select distinct p.starid from planets as p, moons as m where p.planetid=m.planetid and p.starid>=20000 and m.orbitdistance>=3000
