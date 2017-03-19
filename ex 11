@@ -1,0 +1,4 @@
+insert into hilight 
+  select distinct starid from planets, 
+    (select max(orbitdistance) as mod from planets) 
+  where orbitdistance = mod 
